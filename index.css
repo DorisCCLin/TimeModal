@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:300');
+
+
+*{
+	margin:0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.title{
+	position: absolute;
+	width:100%;
+	margin:200px auto;
+	text-align:center;
+	font-family: 'Pacifico', cursive;
+	font-size: 110px;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+.menu {
+    position: absolute;
+    width:30%;
+    margin-top: 375px;
+	margin-left: 35%;
+}
+
+.buttons{	
+	width:125px;
+	height:45px;
+	background-color: white;
+	margin-left: 10.75%;
+	text-align: center;
+	float: left;
+	box-shadow: 2px 2px darkgrey;
+	border-radius: 3px
+}
+
+a {
+	text-decoration:  none;
+}
+
+p {
+	padding-top: 15px ;
+	padding-bottom: 15px ;
+	color: grey;
+	font-family: 'Alegreya Sans', sans-serif;
+}	
+
+.parallax1 {
+	background-image: url('img/home.jpg');
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.msg1{
+	height:80px;
+	background-color: white;
+	font-size:30px;
+	text-align:center;
+	padding:100px;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.parallax2 {
+	background-image: url('img/p2.jpg');
+	width: 100%;
+	height: 80%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.msg2{
+	height:100px;
+	background-color: black;
+	text-align:center;
+	padding:100px;
+	color: white;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+
+
+/*---Time Modal---*/
+
+.timeModal {
+	width:100%;
+	height:100%;
+	display:none;
+	position: absolute;
+	top: 0;
+	position:fixed;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+#getEmail{
+	position: relative;
+	width:550px;
+	height:400px;
+	background-color: white;
+	margin: 150px auto 0;
+}
+
+#cancel{
+    float: right;
+    padding:5px;
+    right:0;
+    text-align: center;
+    border-radius: 5%;
+}
+
+#emailImg{
+	width:45%;
+	height:400px;
+	background-image: url('img/emailimg.jpg');  
+	background-size:cover;    
+}
+
+#welcome, #email, #name{
+	width:90%;
+	position: relative;
+	left:300px;
+}
+
+#welcome{
+	top: 50px;
+	font-size:25px;
+}
+
+#email, #name{
+	top: 80px;
+}
+
+input {
+	width: 200px;
+}
+
+#submit {
+	width:30%;
+	position: relative;
+	left:300px;
+	top: 100px;}
+
+@media all and (max-width: 480px){
+	.title {
+		font-size: 60px;
+	}
+	
+	.buttons{
+	margin-top: 10px;
+	}
+	
+	.msg1{
+	height:150px;
+	font-size:25px;
+	padding:40px;
+	}
+
+	#getEmail{
+	position: relative;
+	width:300px;
+	background-size:cover;
+	margin: 150px auto 0;
+	}
+
+	#emailImg{
+	width:100%;
+	}	
+
+	#welcome, #email, #name{
+	width:100%;
+	position: relative;
+	left:50px ;
+	color:white;
+	text-shadow: 1px 1px grey;
+	}
+
+	#submit {
+	left:50px;
+	top: 130px;
+	}
+}
+
+
+
+@media all and (min-width: 481px) and (max-width: 767px){
+	.title {
+	font-size: 80px;
+	}
+	
+	.menu {
+    width:50%;
+	margin-left: 25%;
+	}
+	
+	.buttons{
+	margin-top: 10px;
+	}
+
+	.msg1{
+	height:150px;
+	padding:30px;
+	}
+
+	#getEmail{
+	width:450px;
+	}
+
+	#welcome, #email, #name{
+	width:90%;
+	left:225px;
+	}
+
+	#submit {
+	left:225px;
+	top: 130px;
+	width:50%;
+	}
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+	.menu {
+    width:50%;
+	margin-left: 30%;
+	}
+
+	.msg1{
+	height:140px;
+	padding:55px;
+	}
+}
